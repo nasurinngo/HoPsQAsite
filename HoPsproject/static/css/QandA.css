@@ -1,0 +1,146 @@
+
+body{
+    /* 方眼紙模様に必須のスタイル */
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+    linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+background-size: 15px 15px;
+background-repeat: repeat;
+background-position: center center;
+
+/* 以下任意のスタイル */
+padding: 20px;
+    font-family:"Avenir Next";
+}
+
+h1{
+    color:rgb(44, 166, 224);
+    font-size: 50px;
+}
+h2{
+    color:rgb(44, 166, 224);
+}
+
+p{
+    color:rgb(44, 166, 224);
+    font-size: 30px;
+}
+
+html,body{
+    height:auto;
+    width:auto;
+}
+
+html{
+    width: 100%; 
+}
+
+.header-list li{
+    float:right;
+    padding:20px;
+    list-style:none;
+    position: relative;
+}
+
+
+.header {
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color: #fff;
+    height: 70px;
+    padding: 10px 10px 20px 38px;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border:2px solid #79747477;
+    padding-bottom:10px;
+    z-index: 99;/*一番上*/
+  }
+  
+  .logo {
+    color:#08ffc8;
+    font-size: 24px;
+  }
+  
+  form{
+    font-size: 20px;
+    color:rgb(44, 166, 224);
+  }
+
+  li{
+    list-style: none;
+  }
+
+
+
+    /*== ボタン設定 */
+.btn{
+    /*アニメーションの起点とするためrelativeを指定*/
+    position: relative;
+    overflow: hidden;
+    /*ボタンの形状*/
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #79747477;/* ボーダーの色と太さ */
+    padding: 10px 30px;
+    text-align: center;
+    outline: none;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(44, 166, 224);
+    font-size: 20px;
+    color: #ffffff;
+    }
+    
+    /*ボタン内spanの形状*/
+    .btn span {
+    position: relative;
+    z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+    color:#ffffff;
+    width: 100%;
+    }
+    
+    .btn:hover span{
+    color:rgb(44, 166, 224);
+    }
+    
+    /*== 背景が流れる（下から上） */
+    .bgbottom:before {
+    content: '';
+    /*絶対配置で位置を指定*/
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index: 2;
+    /*色や形状*/
+    background: #ffffff;/*背景色*/
+    width: 100%;
+    height: 0;
+    }
+    
+    /*hoverした際の形状*/
+    .bgbottom:hover:before{
+    height: 100%;  
+    background-color:#ffffff;
+    color:rgb(44, 166, 224);
+    width: 100%;
+    }
+    
+    .btn{
+    vertical-align:middle; 
+    width: 100%;
+    padding: 10px ;
+    text-align: center;
+    margin: 0 0 0 0;
+    }
+
+    .btn:in{
+        position:relative;
+        top:100px;
+        box-shadow:none;
+      }
