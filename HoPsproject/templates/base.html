@@ -14,8 +14,8 @@
   <body>
     <nav class="navbar navbar-dark bg-success sticky-top">
       <div class="navbar-nav d-flex flex-row">
-        <a class="nav-link mx-3" href="{% url 'index' %}">質問一覧</a>
-        <a class="nav-link mx-3" href="{% url 'create-HoPsapp' %}">質問登録</a>
+        <a class="nav-link mx-3" href="{% url 'index' %}">名前一覧</a>
+        <a class="nav-link mx-3" href="{% url 'create-HoPsapp' %}">名前登録</a>
       </div>
       <div class="navbar-nav d-flex flex-row">
         {% if request.user.is_authenticated %}

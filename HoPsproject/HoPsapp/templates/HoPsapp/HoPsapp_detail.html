@@ -19,7 +19,7 @@
         </div>
         {% endfor %}
       </div>
-      <a href="{% url 'review' object.pk %}" class="btn btn-primary">レビューする</a>
+      <a href="{% url 'review' object.pk %}" class="btn btn-primary">伝言を残す</a>
       <a href="{% url 'update-HoPsapp' object.pk %}" class="btn btn-primary">編集する</a>
       <a href="{% url 'delete-HoPsapp' object.pk %}" class="btn btn-primary">削除する</a>
       <h6 class="card-title">{{ object.category }}</h6>

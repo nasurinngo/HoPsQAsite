@@ -21,7 +21,7 @@ class DetailHoPsView(LoginRequiredMixin, DetailView):
 class CreateHoPsView(LoginRequiredMixin, CreateView):
     template_name = 'HoPsapp/HoPsapp_create.html'
     model = HoPs
-    fields = ('title', 'text', 'category', 'thumbnail')
+    fields = ('title', 'text', 'category')
     success_url = reverse_lazy('list-HoPsapp')
 
     def form_valid(self, form):

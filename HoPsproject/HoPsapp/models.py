@@ -4,12 +4,11 @@ from .consts import MAX_RATE
 
 RATE_CHOICES = [(x, str(x)) for x in range(0, MAX_RATE + 1)]
 
-CATEGORY = (('campusLife', '学校生活'), ('class', '授業'), ('part-timeJob', 'アルバイト'), ('club', 'サークル活動'),('dreamProject', '夢プロジェクト'), ('entranceExamination', '入試'), ('study', '勉強'), ('seminar', 'ゼミ'), ('departmentalSelection', '学科選択'), ('other', 'その他'), ('wanted', '現在回答募集中の質問'))
+CATEGORY = (('１年生', '１年生'), ('２年生', '２年生'), ('３年生', '３年生'))
 
 class HoPs(models.Model):
     title = models.CharField(max_length=100)
-    text = models.TextField()
-    thumbnail = models.ImageField(null=True, blank=True)
+    text = models.CharField(max_length=200)
     category = models.CharField(
             max_length=100,
             choices = CATEGORY
