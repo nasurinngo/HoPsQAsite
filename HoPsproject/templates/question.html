@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HUSBOX</title>
+    <link rel="stylesheet" href="/static/css/question.css">
+    <meta name="description" content="大学質問サイト">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="/static/image/HoPs_logo.png" alt="LOGO" height="40px">
+        </div>
+        <div class="header-list">
+            <ul>
+                <li><img src="a" alt="NOTICE"></li>
+                <li>
+                    <div class="qanda_itirann">
+                        <a href="question.html">Q&A一覧</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="hatena">
+            H<span class="change">U</span>S<span class="change">.？.</span>B<span class="change">O</span>X
+        </div>
+
+        <div class="question">
+            <p>質問</p>
+        </div>
+
+        <form action="example.php" method="post" name="contact-form">
+            <div class="category">
+                カテゴリ
+                <select name="kategori">
+                    <option value="life">学校生活</option>
+                    <option value="study">勉強</option>
+                    <option value="circle">サークル</option>
+                    <option value="sentaku" selected>選択</option>
+                </select>
+
+            </div>
+
+            <div class="title">
+                <p>タイトル</p>
+                <input type="text">
+
+            </div>
+
+            <div class="naiyou">
+                <p>質問内容</p>
+                <textarea name="message">メッセージを入力</textarea>
+            </div>
+
+            <div class="touko">
+                <button type="button">投稿</button>
+
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
