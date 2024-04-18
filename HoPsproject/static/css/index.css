@@ -1,0 +1,144 @@
+body {
+  font-family: "Avenir Next";
+  /* 方眼紙模様に必須のスタイル */
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+      linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: #fff;
+  height: 80px;
+  position: fixed;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: right;
+  padding: 20px 10px;
+}
+
+.main {
+  position: relative;
+  padding: 10px;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #adadad;
+  border-radius: 4px;
+  box-shadow: 7px 7px #adadad;
+  z-index: 1;
+}
+
+.hatena {
+  font-size: 5em;
+  text-align: center;
+  color: rgb(44, 166, 224);
+  font-weight: bold;
+}
+
+.change {
+  color: #ffa500;
+}
+
+.btn-right-radius {
+  margin-bottom: -50px;
+  font-size: 30px;
+  text-align: center;
+  float: right;
+  position: relative;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background-color: orange;
+  color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  width: 200px;
+  height: 50px;
+  transition: .4s;
+}
+
+.btn-right-radius:hover {
+  color: orange;
+  background: #ffffff;
+  border: 3px solid orange;
+}
+
+.contents-item2 {
+  float: left;
+  margin-top: 100px;
+}
+
+.btn-left-radius {
+  margin-top: -30px;
+  font-size: 30px;
+  text-align: center;
+  float: right;
+  position: relative;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background-color: rgb(44, 166, 224);
+  color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  width: 200px;
+  height: 50px;
+  transition: .4s;
+}
+
+.btn-left-radius:hover {
+  color: rgb(44, 166, 224);
+  background: #ffffff;
+  border: 3px solid rgb(44, 166, 224);
+}
+
+
+
+.contents-item3 p {
+  position: relative;
+  color: #ffffff;
+  background-color: rgb(44, 166, 224);
+  height: 30px;
+  width: 120px;
+  margin: 200px;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 20px;
+  text-align: center;
+  right: 170px;
+}
+
+.contents-item3 textarea {
+  position: relative;
+  background-color: #ffffff;
+  height: 50px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 0px 10px 10px 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(44, 166, 224);
+
+}
+
+.contents-item3-1 {
+  float: right;
+  margin-top: -220px;
+  margin-right: 50px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HUSBOX</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <meta name="description" content="大学質問サイト">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="/static/image/HoPs_logo.png" alt="LOGO" height="40px">
+        </div>
+        <div class="header-list">
+            <ul>
+                <li><img src="a" alt="NOTICE"></li>
+                <li>
+                    <div class="qanda_itirann">
+                        <a href="question.html">Q&A一覧</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="hatena">
+            H<font color="orange">U</font>S<font color="orange">.？.</font>B<font color="orange">O</font>X
+        </div>
+
+        <form name="QA_search" id="search_header" class="searchAreaInner" data-osccid="search_header" method="get"
+            action="" role="search">
+            <div class="keyword">
+                <div class="keyword_seach">キーワード検索</div>
+                <input name="MT" type="text" autocomplete="off" class="text suggest searchPlaceholder" value=""
+                    id="searchtop" size="20" maxlength="45">
+
+                <input type="hidden" name="code" value="utf8">
+                <input type="button" id="headersearch_submit" value="検索する" class="headerSearchIcon">
+            </div>
+        </form>
+
+        <form action="example.php" method="post" name="contact-form">
+            <div class="category">
+                カテゴリから探す
+                <select name="kategori">
+                    <option value="life">学校生活</option>
+                    <option value="study">勉強</option>
+                    <option value="circle">サークル</option>
+                    <option value="sentaku" selected>選択</option>
+                </select>
+
+            </div>
+        </form>
+        <hr color="#0000ff">
+        <h1>Q&A一覧</h1>
+        
+        <table border="1" table width="100%">
+            <tr align=" left">
+                <th>Q. </th>
+            </tr>
+            <tr align=" left">
+                <th>A.</th>
+            </tr>
+        </table>
+        <table border="1" table width="100%">
+            <tr align=" left">
+                <th>Q. </th>
+            </tr>
+            <tr align=" left">
+                <th>A.</th>
+            </tr>
+        </table>
+        <table border="1" table width="100%">
+            <tr align=" left">
+                <th>Q. </th>
+            </tr>
+            <tr align=" left">
+                <th>A.</th>
+            </tr>
+        </table>
+        <table border="1" table width="100%">
+            <tr align=" left">
+                <th>Q. </th>
+            </tr>
+            <tr align=" left">
+                <th>A.</th>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>

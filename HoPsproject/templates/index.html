@@ -1,52 +1,48 @@
-{% load static %}
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="utf-8">
-      <title>HUS.？.BOX</title>
-      <link rel="stylesheet" href="{% static 'css/home.css' %}">
-    </head>
+<html lang="ja">
     
-    <body>
-      <div class="header">
-       <div class="header-logo">
-          <img src="{% static 'image/HoPs_logo.png' %}" alt="LOGO" height="40px">
+<head>
+    <meta charset="UTF-8">
+    <title>HUSBOX</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <meta name="description" content="大学質問サイト">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="/static/image/HoPs_logo.png" alt="LOGO" height="40px">
         </div>
         <div class="header-list">
-            <li class="beru">🔔</li>
-          </ul>
-        </div>
-      </div>
-    <div class="kuhaku"></div>
+            <ul>
+                <li><img src="a" alt="NOTICE"></li>
+                <li>
+                <div class="qanda_itirann">
+                <a href="QandA.html">Q&A一覧</a>
+                </div></li>
+            </ul>
+        </div>  
+    </div>
+
     <div class="main">
-      <div class="contents">
-        <div class="hatena" >H<font color="orange">U</font>S<font color="orange">.？.</font>B<font color="orange">O</font>X</div>
-        <div class="in">
-          <br>
-            <p>
-              <a href="sitsumon.html" class="btn1 bgbottom1"><span>質問してみよう！！</span></a>
-            </p>
-          </div>
-        </div> 
-          <div class="contents-left">
-            <a href="kategori.html" class="btn bgbottom"><span>カテゴリから探す</span></a>
-          </div>
-          <div class="contents-right">
-            <a href="qanda.html" class="btn bgbottom"><span>Q&A一覧</span></a>
-          </div>
-        
-      <div class="kaitou">
-        <div class="bosyu">
-          <br><a href="bosyu.html" class="btn bgbottom"><span>回答募集中の質問</span></a>
-         
-    
+        <div class="hatena" >            H<span class="change">U</span>S<span class="change">.？.</span>B<span class="change">O</span>X
         </div>
-        <div class="kaitouzumi">
-          <h2>
-          最新の解決済み
-          </h2>
+        <div class="contents-item">
+            <a href="question.html" class="btn-right-radius"> 質問する </a>
         </div>
-      </div>    
-  </div>
-    </body>
+        <div class="contents-item2">
+            <a href="answer.html" class="btn-left-radius"> 回答する </a>
+        </div>
+        <div class="contents-item3">
+            <p>Q＆A一覧<textarea name="message"></textarea></p>
+            <div class="contents-item3-1">
+                <a href="QandA.html">もっと見る</a>
+                </div>
+        </div>
+
+    </div>
+
+
+</body>
+
 </html>

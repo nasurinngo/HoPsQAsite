@@ -1,0 +1,177 @@
+body {
+  font-family: "Avenir Next";
+  /* 方眼紙模様に必須のスタイル */
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+      linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+.header {
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: #fff;
+  height: 80px;
+  position: fixed;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 10px;
+}
+
+.header-list li {
+  float: right;
+  padding: 27px 10px;
+}
+
+.hatena {
+  font-size: 5em;
+  text-align: center;
+  color: rgb(44, 166, 224);
+  font-weight: bold;
+}
+
+.change {
+  color: #ffa500;
+}
+
+.main {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  height:600px;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #adadad;
+  border-radius: 4px;
+  box-shadow: 7px 7px #adadad;
+  z-index: 1;
+}
+
+.answer {
+  position: relative;
+  font-size: 45px;
+  color: #ffffff;
+  background-color: rgb(44, 166, 224);
+  height: 70px;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 78px;
+  z-index: 10;
+}
+/* 色付きの円 */
+.question::after {
+  content: '';
+  position: absolute;
+  width: 1000;
+  height: 0;
+  border-radius: 100%;
+  transform: rotate(45deg);
+  left: 150px;
+  top: 110px;
+  border-left: 25px solid rgb(44, 166, 224);
+  ;
+  border-top: 25px solid rgb(44, 166, 224);
+  ;
+  border-right: 25px solid rgb(44, 166, 224);
+  ;
+  border-bottom: 25px solid rgb(44, 166, 224);
+  ;
+  z-index: 1;    
+}
+/* 白い円 */
+.question::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transform: rotate(45deg);
+  left: 160px;
+  top: 80px;
+  border-left: 35px solid #ffffff;
+  border-top: 35px solid #ffffff;
+  border-right: 35px solid #ffffff;
+  border-bottom: 35px solid #ffffff;
+  z-index: 2;
+}
+.shitumon {
+  position: relative;
+  color: #ffffff;
+  background-color: #ffa500;
+  height: 30px;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 20px;
+  line-height: 35px;
+  right: 140px;
+
+}
+
+.naiyou {
+  position: relative;
+  background-color: #ffffff;
+  height: 100px;
+  width: 390px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 0px 10px 10px 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffa500;
+}
+
+.kaito p {
+  position: relative;
+  color: #ffffff;
+  background-color: rgb(44, 166, 224);
+  height: 30px;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 20px;
+  line-height: 35px;
+  right: 140px;
+
+}
+
+.kaito textarea {
+  position: relative;
+  background-color: #ffffff;
+  height: 100px;
+  width: 385px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 0px 10px 10px 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(44, 166, 224);
+}
+button{
+  position: relative;
+  color:#ffffff;
+  background-color:rgb(44, 166, 224)
+  ;
+  height:30px;
+  width:80px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-color: rgb(44, 166, 224)
+  ;
+  border-style:solid;
+  font-size:15px;
+
+}
